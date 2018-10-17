@@ -7,7 +7,20 @@
 		<key>BigRational.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>E7EB8DA92177A3EB00DC3EFA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E7EB8DB22177A3EB00DC3EFA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

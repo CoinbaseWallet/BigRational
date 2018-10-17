@@ -1,0 +1,28 @@
+PODS:
+  - BigInt (3.1.0):
+    - SipHash (~> 1.2)
+  - Nimble (7.3.1)
+  - Quick (1.3.2)
+  - SipHash (1.2.2)
+
+DEPENDENCIES:
+  - BigInt (~> 3.1.0)
+  - Nimble (~> 7.3.1)
+  - Quick (~> 1.3.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BigInt
+    - Nimble
+    - Quick
+    - SipHash
+
+SPEC CHECKSUMS:
+  BigInt: 76b5dfdfa3e2e478d4ffdf161aeede5502e2742f
+  Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
+  Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
+  SipHash: fad90a4683e420c52ef28063063dbbce248ea6d4
+
+PODFILE CHECKSUM: 79de449660373834d181787d33c8bbb8a14856c4
+
+COCOAPODS: 1.5.3

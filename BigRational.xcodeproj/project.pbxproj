@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E7EB8DB42177A3EB00DC3EFA /* BigRational.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7EB8DAA2177A3EB00DC3EFA /* BigRational.framework */; };
-		E7EB8DB92177A3EB00DC3EFA /* BigRationalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EB8DB82177A3EB00DC3EFA /* BigRationalTests.swift */; };
+		0827E9FA31285B68218064F9 /* Pods_BigRational.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8442B77465D131CAC7C1FB42 /* Pods_BigRational.framework */; };
+		2B569E50B6E54EA31EBD0DA3 /* Pods_BigRationalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0431E02C1FB202E76A4884 /* Pods_BigRationalTests.framework */; };
+		E70E59F92177E7EA00FAD129 /* BigRationalSubtractionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70E59F82177E7EA00FAD129 /* BigRationalSubtractionTests.swift */; };
+		E7155AFF21780043002CE66B /* BigRationalModTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7155AFE21780043002CE66B /* BigRationalModTests.swift */; };
+		E718A2E72177F03E0097D0AB /* BigRationalDivisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E718A2E62177F03E0097D0AB /* BigRationalDivisionTests.swift */; };
+		E72D536E2177DB8900C301FF /* BigRational.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7EB8DAA2177A3EB00DC3EFA /* BigRational.framework */; };
+		E72D53752177DBAF00C301FF /* BigRationalMultiplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72D53742177DBAF00C301FF /* BigRationalMultiplicationTests.swift */; };
+		E7CA43EB2177EF4B00B4EB54 /* BigRationalAdditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CA43EA2177EF4B00B4EB54 /* BigRationalAdditionTests.swift */; };
 		E7EB8DBB2177A3EB00DC3EFA /* BigRational.h in Headers */ = {isa = PBXBuildFile; fileRef = E7EB8DAD2177A3EB00DC3EFA /* BigRational.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7EB8DCF2177CFFF00DC3EFA /* BigRational.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EB8DCD2177CFFF00DC3EFA /* BigRational.swift */; };
+		E7EB8DD32177D01000DC3EFA /* BigInt+BigRational.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EB8DD22177D01000DC3EFA /* BigInt+BigRational.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E7EB8DB52177A3EB00DC3EFA /* PBXContainerItemProxy */ = {
+		E72D536F2177DB8900C301FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E7EB8DA12177A3EB00DC3EFA /* Project object */;
 			proxyType = 1;
@@ -23,38 +31,87 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D0431E02C1FB202E76A4884 /* Pods_BigRationalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BigRationalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CE19E39E805D44FDE6E53EA /* Pods-BigRational.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigRational.release.xcconfig"; path = "Pods/Target Support Files/Pods-BigRational/Pods-BigRational.release.xcconfig"; sourceTree = "<group>"; };
+		8442B77465D131CAC7C1FB42 /* Pods_BigRational.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BigRational.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5402FB6A8637B12AFF5C40 /* Pods-BigRationalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigRationalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BigRationalTests/Pods-BigRationalTests.release.xcconfig"; sourceTree = "<group>"; };
+		E70E59F82177E7EA00FAD129 /* BigRationalSubtractionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigRationalSubtractionTests.swift; sourceTree = "<group>"; };
+		E7155AFE21780043002CE66B /* BigRationalModTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigRationalModTests.swift; sourceTree = "<group>"; };
+		E718A2E62177F03E0097D0AB /* BigRationalDivisionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigRationalDivisionTests.swift; sourceTree = "<group>"; };
+		E72D53692177DB8900C301FF /* BigRationalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BigRationalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E72D536D2177DB8900C301FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E72D53742177DBAF00C301FF /* BigRationalMultiplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigRationalMultiplicationTests.swift; sourceTree = "<group>"; };
+		E7CA43EA2177EF4B00B4EB54 /* BigRationalAdditionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigRationalAdditionTests.swift; sourceTree = "<group>"; };
 		E7EB8DAA2177A3EB00DC3EFA /* BigRational.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BigRational.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7EB8DAD2177A3EB00DC3EFA /* BigRational.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BigRational.h; sourceTree = "<group>"; };
 		E7EB8DAE2177A3EB00DC3EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7EB8DB32177A3EB00DC3EFA /* BigRationalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BigRationalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7EB8DB82177A3EB00DC3EFA /* BigRationalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigRationalTests.swift; sourceTree = "<group>"; };
-		E7EB8DBA2177A3EB00DC3EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7EB8DCD2177CFFF00DC3EFA /* BigRational.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigRational.swift; sourceTree = "<group>"; };
+		E7EB8DD22177D01000DC3EFA /* BigInt+BigRational.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BigInt+BigRational.swift"; sourceTree = "<group>"; };
+		E8E331DC4631A9A8E7664E98 /* Pods-BigRationalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigRationalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BigRationalTests/Pods-BigRationalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA1FD9B2F6C3E8BD0A1D15E7 /* Pods-BigRational.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigRational.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BigRational/Pods-BigRational.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E72D53662177DB8900C301FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E72D536E2177DB8900C301FF /* BigRational.framework in Frameworks */,
+				2B569E50B6E54EA31EBD0DA3 /* Pods_BigRationalTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E7EB8DA72177A3EB00DC3EFA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E7EB8DB02177A3EB00DC3EFA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E7EB8DB42177A3EB00DC3EFA /* BigRational.framework in Frameworks */,
+				0827E9FA31285B68218064F9 /* Pods_BigRational.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BA29205637848875D378460 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8442B77465D131CAC7C1FB42 /* Pods_BigRational.framework */,
+				1D0431E02C1FB202E76A4884 /* Pods_BigRationalTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF1ABFF0442AA48B110B836D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA1FD9B2F6C3E8BD0A1D15E7 /* Pods-BigRational.debug.xcconfig */,
+				3CE19E39E805D44FDE6E53EA /* Pods-BigRational.release.xcconfig */,
+				E8E331DC4631A9A8E7664E98 /* Pods-BigRationalTests.debug.xcconfig */,
+				DC5402FB6A8637B12AFF5C40 /* Pods-BigRationalTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E72D536A2177DB8900C301FF /* BigRationalTests */ = {
+			isa = PBXGroup;
+			children = (
+				E72D536D2177DB8900C301FF /* Info.plist */,
+				E72D53742177DBAF00C301FF /* BigRationalMultiplicationTests.swift */,
+				E70E59F82177E7EA00FAD129 /* BigRationalSubtractionTests.swift */,
+				E7CA43EA2177EF4B00B4EB54 /* BigRationalAdditionTests.swift */,
+				E718A2E62177F03E0097D0AB /* BigRationalDivisionTests.swift */,
+				E7155AFE21780043002CE66B /* BigRationalModTests.swift */,
+			);
+			path = BigRationalTests;
+			sourceTree = "<group>";
+		};
 		E7EB8DA02177A3EB00DC3EFA = {
 			isa = PBXGroup;
 			children = (
 				E7EB8DAC2177A3EB00DC3EFA /* BigRational */,
-				E7EB8DB72177A3EB00DC3EFA /* BigRationalTests */,
+				E72D536A2177DB8900C301FF /* BigRationalTests */,
+				1BA29205637848875D378460 /* Frameworks */,
+				AF1ABFF0442AA48B110B836D /* Pods */,
 				E7EB8DAB2177A3EB00DC3EFA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				E7EB8DAA2177A3EB00DC3EFA /* BigRational.framework */,
-				E7EB8DB32177A3EB00DC3EFA /* BigRationalTests.xctest */,
+				E72D53692177DB8900C301FF /* BigRationalTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,19 +128,28 @@
 		E7EB8DAC2177A3EB00DC3EFA /* BigRational */ = {
 			isa = PBXGroup;
 			children = (
-				E7EB8DAD2177A3EB00DC3EFA /* BigRational.h */,
-				E7EB8DAE2177A3EB00DC3EFA /* Info.plist */,
+				E7F59044217801AF008E6751 /* Module */,
+				E7EB8DD12177D00500DC3EFA /* Extensions */,
+				E7EB8DCD2177CFFF00DC3EFA /* BigRational.swift */,
 			);
 			path = BigRational;
 			sourceTree = "<group>";
 		};
-		E7EB8DB72177A3EB00DC3EFA /* BigRationalTests */ = {
+		E7EB8DD12177D00500DC3EFA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				E7EB8DB82177A3EB00DC3EFA /* BigRationalTests.swift */,
-				E7EB8DBA2177A3EB00DC3EFA /* Info.plist */,
+				E7EB8DD22177D01000DC3EFA /* BigInt+BigRational.swift */,
 			);
-			path = BigRationalTests;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E7F59044217801AF008E6751 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				E7EB8DAE2177A3EB00DC3EFA /* Info.plist */,
+				E7EB8DAD2177A3EB00DC3EFA /* BigRational.h */,
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,10 +166,31 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		E72D53682177DB8900C301FF /* BigRationalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E72D53712177DB8900C301FF /* Build configuration list for PBXNativeTarget "BigRationalTests" */;
+			buildPhases = (
+				653A853CB48643BE0E51EF08 /* [CP] Check Pods Manifest.lock */,
+				E72D53652177DB8900C301FF /* Sources */,
+				E72D53662177DB8900C301FF /* Frameworks */,
+				E72D53672177DB8900C301FF /* Resources */,
+				E60727974423E9803BA12B6E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E72D53702177DB8900C301FF /* PBXTargetDependency */,
+			);
+			name = BigRationalTests;
+			productName = BigRationalTests;
+			productReference = E72D53692177DB8900C301FF /* BigRationalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E7EB8DA92177A3EB00DC3EFA /* BigRational */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7EB8DBE2177A3EB00DC3EFA /* Build configuration list for PBXNativeTarget "BigRational" */;
 			buildPhases = (
+				3693CD7DAA3375C69259FD28 /* [CP] Check Pods Manifest.lock */,
 				E7EB8DA52177A3EB00DC3EFA /* Headers */,
 				E7EB8DA62177A3EB00DC3EFA /* Sources */,
 				E7EB8DA72177A3EB00DC3EFA /* Frameworks */,
@@ -118,24 +205,6 @@
 			productReference = E7EB8DAA2177A3EB00DC3EFA /* BigRational.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E7EB8DB22177A3EB00DC3EFA /* BigRationalTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E7EB8DC12177A3EB00DC3EFA /* Build configuration list for PBXNativeTarget "BigRationalTests" */;
-			buildPhases = (
-				E7EB8DAF2177A3EB00DC3EFA /* Sources */,
-				E7EB8DB02177A3EB00DC3EFA /* Frameworks */,
-				E7EB8DB12177A3EB00DC3EFA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E7EB8DB62177A3EB00DC3EFA /* PBXTargetDependency */,
-			);
-			name = BigRationalTests;
-			productName = BigRationalTests;
-			productReference = E7EB8DB32177A3EB00DC3EFA /* BigRationalTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -146,11 +215,13 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Coinbase Inc";
 				TargetAttributes = {
+					E72D53682177DB8900C301FF = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
 					E7EB8DA92177A3EB00DC3EFA = {
 						CreatedOnToolsVersion = 10.0;
-					};
-					E7EB8DB22177A3EB00DC3EFA = {
-						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -167,20 +238,20 @@
 			projectRoot = "";
 			targets = (
 				E7EB8DA92177A3EB00DC3EFA /* BigRational */,
-				E7EB8DB22177A3EB00DC3EFA /* BigRationalTests */,
+				E72D53682177DB8900C301FF /* BigRationalTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E7EB8DA82177A3EB00DC3EFA /* Resources */ = {
+		E72D53672177DB8900C301FF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E7EB8DB12177A3EB00DC3EFA /* Resources */ = {
+		E7EB8DA82177A3EB00DC3EFA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -189,33 +260,153 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3693CD7DAA3375C69259FD28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BigRational-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		653A853CB48643BE0E51EF08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BigRationalTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E60727974423E9803BA12B6E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BigRationalTests/Pods-BigRationalTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
+				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BigRationalTests/Pods-BigRationalTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		E72D53652177DB8900C301FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7155AFF21780043002CE66B /* BigRationalModTests.swift in Sources */,
+				E7CA43EB2177EF4B00B4EB54 /* BigRationalAdditionTests.swift in Sources */,
+				E718A2E72177F03E0097D0AB /* BigRationalDivisionTests.swift in Sources */,
+				E72D53752177DBAF00C301FF /* BigRationalMultiplicationTests.swift in Sources */,
+				E70E59F92177E7EA00FAD129 /* BigRationalSubtractionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E7EB8DA62177A3EB00DC3EFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E7EB8DAF2177A3EB00DC3EFA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E7EB8DB92177A3EB00DC3EFA /* BigRationalTests.swift in Sources */,
+				E7EB8DCF2177CFFF00DC3EFA /* BigRational.swift in Sources */,
+				E7EB8DD32177D01000DC3EFA /* BigInt+BigRational.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E7EB8DB62177A3EB00DC3EFA /* PBXTargetDependency */ = {
+		E72D53702177DB8900C301FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E7EB8DA92177A3EB00DC3EFA /* BigRational */;
-			targetProxy = E7EB8DB52177A3EB00DC3EFA /* PBXContainerItemProxy */;
+			targetProxy = E72D536F2177DB8900C301FF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		E72D53722177DB8900C301FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8E331DC4631A9A8E7664E98 /* Pods-BigRationalTests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BigRationalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.coinbase.wallet.bigrational.BigRationalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E72D53732177DB8900C301FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC5402FB6A8637B12AFF5C40 /* Pods-BigRationalTests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BigRationalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.coinbase.wallet.bigrational.BigRationalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		E7EB8DBC2177A3EB00DC3EFA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -340,14 +531,17 @@
 		};
 		E7EB8DBF2177A3EB00DC3EFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA1FD9B2F6C3E8BD0A1D15E7 /* Pods-BigRational.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = BigRational/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BigRational/Module/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -356,7 +550,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.coinbase.wallet.bigrational.BigRational;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,14 +560,17 @@
 		};
 		E7EB8DC02177A3EB00DC3EFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CE19E39E805D44FDE6E53EA /* Pods-BigRational.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = BigRational/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BigRational/Module/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -380,41 +579,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.coinbase.wallet.bigrational.BigRational;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		E7EB8DC22177A3EB00DC3EFA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BigRationalTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.coinbase.wallet.bigrational.BigRationalTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		E7EB8DC32177A3EB00DC3EFA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BigRationalTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.coinbase.wallet.bigrational.BigRationalTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -423,6 +589,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E72D53712177DB8900C301FF /* Build configuration list for PBXNativeTarget "BigRationalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E72D53722177DB8900C301FF /* Debug */,
+				E72D53732177DB8900C301FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E7EB8DA42177A3EB00DC3EFA /* Build configuration list for PBXProject "BigRational" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -437,15 +612,6 @@
 			buildConfigurations = (
 				E7EB8DBF2177A3EB00DC3EFA /* Debug */,
 				E7EB8DC02177A3EB00DC3EFA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E7EB8DC12177A3EB00DC3EFA /* Build configuration list for PBXNativeTarget "BigRationalTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E7EB8DC22177A3EB00DC3EFA /* Debug */,
-				E7EB8DC32177A3EB00DC3EFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
