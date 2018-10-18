@@ -150,8 +150,7 @@ public struct BigRational {
         precision: Int,
         decimalSeparator: String = Locale.current.decimalSeparator ?? "."
     ) -> String {
-        let isNegative = (numerator.isNegative || denominator.isNegative) &&
-            numerator.isNegative != denominator.isNegative
+        let isNegative = numerator.isNegative != denominator.isNegative
 
         let denom = denominator.absoluteValue
         let num = numerator.absoluteValue
