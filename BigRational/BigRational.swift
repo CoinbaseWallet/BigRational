@@ -19,7 +19,7 @@ public struct BigRational {
     /// Constructor using `NSDecimalNumber`
     public init?(
         _ value: NSDecimalNumber,
-        decimalSeparator: String
+        decimalSeparator: String = Locale.current.decimalSeparator ?? "."
     ) {
         self.init(value.stringValue, decimalSeparator: decimalSeparator)
     }
@@ -31,7 +31,7 @@ public struct BigRational {
     ///     - decimalSeparator: Decimal separator used to parse the decimal number
     public init?(
         _ value: String,
-        decimalSeparator: String
+        decimalSeparator: String = Locale.current.decimalSeparator ?? "."
     ) {
         if let index = value.index(of: Character(decimalSeparator)) {
             /// Value is a decimal number
@@ -148,11 +148,14 @@ public struct BigRational {
     /// - Returns: A decimal string that represents the BigRational
     public func asDecimalString(
         precision: Int,
-        decimalSeparator: String
+        decimalSeparator: String = Locale.current.decimalSeparator ?? "."
     ) -> String {
-        let isNegative = numerator.isNegative != denominator.isNegative
-        var (quotient, remainder) = numerator.absoluteValue
-            .quotientAndRemainder(dividingBy: denominator.absoluteValue)
+        let isNegative = (numerator.isNegative || denominator.isNegative) &&
+            numerator.isNegative != denominator.isNegative
+
+        let denom = denominator.absoluteValue
+        let num = numerator.absoluteValue
+        var (quotient, remainder) = num.quotientAndRemainder(dividingBy: denom)
 
         var result = String(quotient)
 
@@ -166,7 +169,7 @@ public struct BigRational {
         var currentPrecision = 0
 
         repeat {
-            (quotient, remainder) = (remainder * .ten).quotientAndRemainder(dividingBy: denominator)
+            (quotient, remainder) = (remainder * .ten).quotientAndRemainder(dividingBy: denom)
             result += String(quotient)
             currentPrecision += 1
         } while remainder != .zero && currentPrecision <= precision
