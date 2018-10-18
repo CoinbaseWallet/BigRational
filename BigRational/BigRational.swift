@@ -14,6 +14,15 @@ public struct BigRational: Codable {
     /// Current instance denominator
     let denominator: BigInt
 
+    // Convert to BigInt
+    public var asBigInt: BigInt {
+        let isNegative = numerator.isNegative != denominator.isNegative
+        let denom = denominator.absoluteValue
+        let num = numerator.absoluteValue
+        let (quotient, _) = num.quotientAndRemainder(dividingBy: denom)
+        return isNegative ? quotient * .negativeOne : quotient
+    }
+
     /// Constructor using `BigInt`
     public init(_ value: BigInt) {
         numerator = value
@@ -194,14 +203,5 @@ public struct BigRational: Codable {
         } while remainder != .zero && currentPrecision <= precision
 
         return isNegative ? "-\(result)" : result
-    }
-
-    // Convert to BigInt
-    var asBigInt: BigInt {
-        let isNegative = numerator.isNegative != denominator.isNegative
-        let denom = denominator.absoluteValue
-        let num = numerator.absoluteValue
-        let (quotient, _) = num.quotientAndRemainder(dividingBy: denom)
-        return isNegative ? quotient * .negativeOne : quotient
     }
 }
