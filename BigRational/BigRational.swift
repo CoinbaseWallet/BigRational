@@ -1,9 +1,18 @@
 import BigInt
 
 // Represents an arbitrary-precision number
-public struct BigRational {
-    private let numerator: BigInt
-    private let denominator: BigInt
+public struct BigRational: Codable {
+    // Used for Codable
+    enum CodingKeys: String, CodingKey {
+        case numerator
+        case denominator
+    }
+
+    /// Current instance numerator
+    let numerator: BigInt
+
+    /// Current instance denominator
+    let denominator: BigInt
 
     /// Constructor using `BigInt`
     public init(_ value: BigInt) {
@@ -56,6 +65,19 @@ public struct BigRational {
     public init(numerator: BigInt, denominator: BigInt) {
         self.numerator = numerator
         self.denominator = denominator
+    }
+
+    /// Raise to the power of given exponent
+    ///
+    /// - Parameters:
+    ///     - value: Exponent used in the operation
+    ///
+    /// - Returns: Returns `BigRational` raised to the power exponent.
+    public func power(_ value: Int) -> BigRational {
+        let numerator = self.numerator.power(value)
+        let denominator = self.denominator.power(value)
+
+        return BigRational(numerator: numerator, denominator: denominator)
     }
 
     // Equality check using the following formula: a/b = c/d, iff ad = bc
@@ -151,11 +173,9 @@ public struct BigRational {
         decimalSeparator: String = Locale.current.decimalSeparator ?? "."
     ) -> String {
         let isNegative = numerator.isNegative != denominator.isNegative
-
         let denom = denominator.absoluteValue
         let num = numerator.absoluteValue
         var (quotient, remainder) = num.quotientAndRemainder(dividingBy: denom)
-
         var result = String(quotient)
 
         // If it's a whole number, return the result
@@ -174,5 +194,14 @@ public struct BigRational {
         } while remainder != .zero && currentPrecision <= precision
 
         return isNegative ? "-\(result)" : result
+    }
+
+    // Convert to BigInt
+    var asBigInt: BigInt {
+        let isNegative = numerator.isNegative != denominator.isNegative
+        let denom = denominator.absoluteValue
+        let num = numerator.absoluteValue
+        let (quotient, _) = num.quotientAndRemainder(dividingBy: denom)
+        return isNegative ? quotient * .negativeOne : quotient
     }
 }
