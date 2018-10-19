@@ -1,7 +1,7 @@
 import BigInt
 
 // Represents an arbitrary-precision number
-public struct BigRational: Codable {
+public struct BigRational: Codable, Hashable {
     // Used for Codable
     enum CodingKeys: String, CodingKey {
         case numerator
