@@ -15,6 +15,7 @@
 		E72D536E2177DB8900C301FF /* BigRational.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7EB8DAA2177A3EB00DC3EFA /* BigRational.framework */; };
 		E72D53752177DBAF00C301FF /* BigRationalMultiplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72D53742177DBAF00C301FF /* BigRationalMultiplicationTests.swift */; };
 		E7CA43EB2177EF4B00B4EB54 /* BigRationalAdditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CA43EA2177EF4B00B4EB54 /* BigRationalAdditionTests.swift */; };
+		E7DD7B5D217E9BE4008044DA /* BigRationalInitDoubleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DD7B5C217E9BE4008044DA /* BigRationalInitDoubleTests.swift */; };
 		E7EB5361217850C0006E0C9F /* BigRationalPowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EB5360217850C0006E0C9F /* BigRationalPowerTests.swift */; };
 		E7EB53632178551F006E0C9F /* BigRationalAsBigIntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EB53622178551F006E0C9F /* BigRationalAsBigIntTests.swift */; };
 		E7EB8DBB2177A3EB00DC3EFA /* BigRational.h in Headers */ = {isa = PBXBuildFile; fileRef = E7EB8DAD2177A3EB00DC3EFA /* BigRational.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -44,6 +45,7 @@
 		E72D536D2177DB8900C301FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E72D53742177DBAF00C301FF /* BigRationalMultiplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigRationalMultiplicationTests.swift; sourceTree = "<group>"; };
 		E7CA43EA2177EF4B00B4EB54 /* BigRationalAdditionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigRationalAdditionTests.swift; sourceTree = "<group>"; };
+		E7DD7B5C217E9BE4008044DA /* BigRationalInitDoubleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigRationalInitDoubleTests.swift; sourceTree = "<group>"; };
 		E7EB5360217850C0006E0C9F /* BigRationalPowerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigRationalPowerTests.swift; sourceTree = "<group>"; };
 		E7EB53622178551F006E0C9F /* BigRationalAsBigIntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigRationalAsBigIntTests.swift; sourceTree = "<group>"; };
 		E7EB8DAA2177A3EB00DC3EFA /* BigRational.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BigRational.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,7 @@
 				E7155AFE21780043002CE66B /* BigRationalModTests.swift */,
 				E7EB5360217850C0006E0C9F /* BigRationalPowerTests.swift */,
 				E7EB53622178551F006E0C9F /* BigRationalAsBigIntTests.swift */,
+				E7DD7B5C217E9BE4008044DA /* BigRationalInitDoubleTests.swift */,
 			);
 			path = BigRationalTests;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 			files = (
 				E7EB5361217850C0006E0C9F /* BigRationalPowerTests.swift in Sources */,
 				E7155AFF21780043002CE66B /* BigRationalModTests.swift in Sources */,
+				E7DD7B5D217E9BE4008044DA /* BigRationalInitDoubleTests.swift in Sources */,
 				E7CA43EB2177EF4B00B4EB54 /* BigRationalAdditionTests.swift in Sources */,
 				E718A2E72177F03E0097D0AB /* BigRationalDivisionTests.swift in Sources */,
 				E72D53752177DBAF00C301FF /* BigRationalMultiplicationTests.swift in Sources */,

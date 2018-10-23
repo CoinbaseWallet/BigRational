@@ -34,6 +34,14 @@ public struct BigRational: Codable, Hashable {
         self.init(BigInt(value))
     }
 
+    /// Constructor using `Int`
+    public init?(
+        _ value: Double,
+        decimalSeparator: String = Locale.current.decimalSeparator ?? "."
+    ) {
+        self.init(String(value), decimalSeparator: decimalSeparator)
+    }
+
     /// Constructor using `NSDecimalNumber`
     public init?(
         _ value: NSDecimalNumber,
