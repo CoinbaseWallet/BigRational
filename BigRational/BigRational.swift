@@ -1,5 +1,7 @@
 import BigInt
 
+private let periodDecimalSeparator = "."
+
 // Represents an arbitrary-precision number
 public struct BigRational: Codable, Hashable {
     // Used for Codable
@@ -35,19 +37,13 @@ public struct BigRational: Codable, Hashable {
     }
 
     /// Constructor using `Int`
-    public init?(
-        _ value: Double,
-        decimalSeparator: String = Locale.current.decimalSeparator ?? "."
-    ) {
-        self.init(String(value), decimalSeparator: decimalSeparator)
+    public init?(_ value: Double) {
+        self.init(String(value), decimalSeparator: periodDecimalSeparator)
     }
 
     /// Constructor using `NSDecimalNumber`
-    public init?(
-        _ value: NSDecimalNumber,
-        decimalSeparator: String = Locale.current.decimalSeparator ?? "."
-    ) {
-        self.init(value.stringValue, decimalSeparator: decimalSeparator)
+    public init?(_ value: NSDecimalNumber) {
+        self.init(value.stringValue, decimalSeparator: periodDecimalSeparator)
     }
 
     /// Constructor for creating a `BigRational` based on a string. The string can be a decimal or a whole number.
