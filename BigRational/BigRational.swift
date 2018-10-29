@@ -11,10 +11,10 @@ public struct BigRational: Codable, Hashable {
     }
 
     /// Current instance numerator
-    let numerator: BigInt
+    public let numerator: BigInt
 
     /// Current instance denominator
-    let denominator: BigInt
+    public let denominator: BigInt
 
     // Convert to BigInt
     public var asBigInt: BigInt {
