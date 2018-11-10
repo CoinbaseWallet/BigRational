@@ -38,7 +38,7 @@ public struct BigRational: Codable, Hashable {
 
     /// Constructor using `Int`
     public init?(_ value: Double) {
-         self.init(NSDecimalNumber(value: value))
+        self.init(NSDecimalNumber(string: String(value)))
     }
 
     /// Constructor using `NSDecimalNumber`
@@ -53,9 +53,9 @@ public struct BigRational: Codable, Hashable {
     ///     - decimalSeparator: Decimal separator used to parse the decimal number
     public init?(
         _ value: String,
-        decimalSeparator: String = Locale.current.decimalSeparator ?? "."
+        decimalSeparator: String? = Locale.current.decimalSeparator
     ) {
-        if let index = value.index(of: Character(decimalSeparator)) {
+        if let decimalSeparator = decimalSeparator, let index = value.index(of: Character(decimalSeparator)) {
             /// Value is a decimal number
             let numeratorString = value.replacingOccurrences(of: decimalSeparator, with: "")
             let decimalPoints = value.count - index.encodedOffset - 1
@@ -183,7 +183,7 @@ public struct BigRational: Codable, Hashable {
     /// - Returns: A decimal string that represents the BigRational
     public func asDecimalString(
         precision: Int,
-        decimalSeparator: String = Locale.current.decimalSeparator ?? "."
+        decimalSeparator: String? = Locale.current.decimalSeparator
     ) -> String {
         let isNegative = numerator.isNegative != denominator.isNegative
         let denom = denominator.absoluteValue
@@ -197,14 +197,17 @@ public struct BigRational: Codable, Hashable {
         }
 
         // It's a decimal. Lets calculate up to supplied precision
-        result += decimalSeparator
-        var currentPrecision = 0
+        if let decimalSeparator = decimalSeparator {
+            result += decimalSeparator
 
-        repeat {
-            (quotient, remainder) = (remainder * .ten).quotientAndRemainder(dividingBy: denom)
-            result += String(quotient)
-            currentPrecision += 1
-        } while remainder != .zero && currentPrecision <= precision
+            var currentPrecision = 0
+
+            repeat {
+                (quotient, remainder) = (remainder * .ten).quotientAndRemainder(dividingBy: denom)
+                result += String(quotient)
+                currentPrecision += 1
+            } while remainder != .zero && currentPrecision <= precision
+        }
 
         return isNegative ? "-\(result)" : result
     }
