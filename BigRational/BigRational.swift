@@ -38,7 +38,7 @@ public struct BigRational: Codable, Hashable {
 
     /// Constructor using `Int`
     public init?(_ value: Double) {
-        self.init(String(value), decimalSeparator: periodDecimalSeparator)
+         self.init(NSDecimalNumber(value: value))
     }
 
     /// Constructor using `NSDecimalNumber`
