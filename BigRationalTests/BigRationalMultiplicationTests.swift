@@ -3,7 +3,6 @@ import XCTest
 
 class BigRationalMultiplicationTests: XCTestCase {
     func testMultiplicationSmallNumber() {
-
         guard
             let x = BigRational("1223456"),
             let y = BigRational("837567")
@@ -18,7 +17,6 @@ class BigRationalMultiplicationTests: XCTestCase {
     }
 
     func testMultiplicationLargeNumber() {
-
         guard
             let x = BigRational(
                 "12248579348653478965347865347865892764780346578034657034234597637856384765783465"
@@ -39,7 +37,6 @@ class BigRationalMultiplicationTests: XCTestCase {
     }
 
     func testMultiplicationLargeDecimalNumber() {
-
         guard
             let x = BigRational(
                 "34978637946739647364379.47896534786534786589"
@@ -62,7 +59,6 @@ class BigRationalMultiplicationTests: XCTestCase {
     }
 
     func testMultiplicationLargeNegativeDecimalNumber() {
-
         guard
             let x = BigRational(
                 "-243587349857934875893475834534.345348753489759834758347"
@@ -85,7 +81,6 @@ class BigRationalMultiplicationTests: XCTestCase {
     }
 
     func testMultiplicationLargeNegativeDecimalNumbers() {
-
         guard
             let x = BigRational(
                 "-243587349857934875893475834534.345348753489759834758347"
@@ -110,14 +105,13 @@ class BigRationalMultiplicationTests: XCTestCase {
         let resultString2 = result2.asDecimalString(precision: 100)
 
         let expected2 = "2033364630423225250989321920784171113818480815879200329568084524.6381447639506829" +
-        "091726392807841869206263141764512033896915391756511300338"
+            "091726392807841869206263141764512033896915391756511300338"
 
         print("result2 \(result2)")
         XCTAssertEqual(expected2, resultString2)
     }
 
     func testMultiplicationSmallNegativeDecimalNumber() {
-
         guard
             let x = BigRational(
                 "-640.40"

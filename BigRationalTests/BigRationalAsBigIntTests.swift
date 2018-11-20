@@ -1,6 +1,6 @@
+import BigInt
 @testable import BigRational
 import XCTest
-import BigInt
 
 class BigRationalAsBigIntTests: XCTestCase {
     func testAsBigIntWithWholeNumber() {
@@ -11,31 +11,30 @@ class BigRationalAsBigIntTests: XCTestCase {
     }
 
     func testAsBigIntWithDecimalNumber() {
-        let x = BigRational(numerator: BigInt(1223456), denominator: BigInt(12432))
+        let x = BigRational(numerator: BigInt(1_223_456), denominator: BigInt(12432))
         let bigInt = x.asBigInt
 
         XCTAssertEqual(bigInt, BigInt(98))
     }
 
     func testAsBigIntWithNegativeNumeratorDecimalNumber() {
-        let x = BigRational(numerator: BigInt(1223456), denominator: BigInt(-12432))
+        let x = BigRational(numerator: BigInt(1_223_456), denominator: BigInt(-12432))
         let bigInt = x.asBigInt
 
         XCTAssertEqual(bigInt, BigInt(-98))
     }
 
     func testAsBigIntWithNegativeDenominatorDecimalNumber() {
-        let x = BigRational(numerator: BigInt(1223456), denominator: BigInt(-12432))
+        let x = BigRational(numerator: BigInt(1_223_456), denominator: BigInt(-12432))
         let bigInt = x.asBigInt
 
         XCTAssertEqual(bigInt, BigInt(-98))
     }
 
     func testAsBigIntWithNegativeDecimalNumbers() {
-        let x = BigRational(numerator: BigInt(-1223456), denominator: BigInt(-12432))
+        let x = BigRational(numerator: BigInt(-1_223_456), denominator: BigInt(-12432))
         let bigInt = x.asBigInt
 
         XCTAssertEqual(bigInt, BigInt(98))
     }
-
 }

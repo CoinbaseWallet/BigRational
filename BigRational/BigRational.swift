@@ -104,6 +104,50 @@ public struct BigRational: Codable, Hashable {
         return lhs.numerator * rhs.denominator == lhs.denominator * rhs.numerator
     }
 
+    // Greater than check using the following formula: a/b = c/d, iff ad > bc
+    ///
+    /// - Parameters:
+    ///     - lhs: Left hand side value
+    ///     - rhs: Right hand side value
+    ///
+    /// - Returns: A boolean indicating if the lhs BigRational is greater than rhs BigRational
+    public static func > (lhs: BigRational, rhs: BigRational) -> Bool {
+        return lhs.numerator * rhs.denominator > lhs.denominator * rhs.numerator
+    }
+
+    // Less than check using the following formula: a/b = c/d, iff ad < bc
+    ///
+    /// - Parameters:
+    ///     - lhs: Left hand side value
+    ///     - rhs: Right hand side value
+    ///
+    /// - Returns: A boolean indicating if the lhs BigRational is less than rhs BigRational
+    public static func < (lhs: BigRational, rhs: BigRational) -> Bool {
+        return lhs.numerator * rhs.denominator < lhs.denominator * rhs.numerator
+    }
+
+    // Greater than or equal check using the following formula: a/b = c/d, iff ad >= bc
+    ///
+    /// - Parameters:
+    ///     - lhs: Left hand side value
+    ///     - rhs: Right hand side value
+    ///
+    /// - Returns: A boolean indicating if the lhs BigRational is greater than or equal rhs BigRational
+    public static func >= (lhs: BigRational, rhs: BigRational) -> Bool {
+        return lhs.numerator * rhs.denominator >= lhs.denominator * rhs.numerator
+    }
+
+    // Less than or equal check using the following formula: a/b = c/d, iff ad <= bc
+    ///
+    /// - Parameters:
+    ///     - lhs: Left hand side value
+    ///     - rhs: Right hand side value
+    ///
+    /// - Returns: A boolean indicating if the lhs BigRational is less than or equal rhs BigRational
+    public static func <= (lhs: BigRational, rhs: BigRational) -> Bool {
+        return lhs.numerator * rhs.denominator <= lhs.denominator * rhs.numerator
+    }
+
     // Multiplication using the following formula: a/b * c/d  == (ac)/(bd)
     ///
     /// - Parameters:

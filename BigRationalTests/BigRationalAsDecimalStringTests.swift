@@ -1,9 +1,8 @@
-import XCTest
-@testable import BigRational
 import BigInt
+@testable import BigRational
+import XCTest
 
 class BigRationalAsDecimalStringTests: XCTestCase {
-
     func testSmallValue() {
         let locale = Locale(identifier: "en_IN") //
         let decimalSeparator = locale.decimalSeparator ?? "."
@@ -13,5 +12,4 @@ class BigRationalAsDecimalStringTests: XCTestCase {
 
         XCTAssertEqual("0.000000000000000001", moneyString)
     }
-
 }

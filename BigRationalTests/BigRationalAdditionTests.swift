@@ -3,7 +3,6 @@ import XCTest
 
 class BigRationalAdditionTests: XCTestCase {
     func testAdditionSmallNumber() {
-        
         guard
             let x = BigRational("1223456"),
             let y = BigRational("837567")
@@ -18,7 +17,6 @@ class BigRationalAdditionTests: XCTestCase {
     }
 
     func testAdditionLargeNumber() {
-        
         guard
             let x = BigRational(
                 "12248579348653478965347865347865892764780346578034657034234597637856384765783465"
@@ -39,7 +37,6 @@ class BigRationalAdditionTests: XCTestCase {
     }
 
     func testAdditionLargeDecimalNumber() {
-        
         guard
             let x = BigRational(
                 "34978637946739647364379.47896534786534786589"
@@ -61,7 +58,6 @@ class BigRationalAdditionTests: XCTestCase {
     }
 
     func testAdditionLargeNegativeDecimalNumber() {
-        
         guard
             let x = BigRational(
                 "-243587349857934875893475834534.345348753489759834758347"
@@ -91,7 +87,6 @@ class BigRationalAdditionTests: XCTestCase {
     }
 
     func testAdditionLargeNegativeDecimalNumbers() {
-        
         guard
             let x = BigRational(
                 "-243587349857934875893475834534.345348753489759834758347"
@@ -113,7 +108,6 @@ class BigRationalAdditionTests: XCTestCase {
     }
 
     func testAdditionSmallNegativeDecimalNumber() {
-        
         guard
             let x = BigRational(
                 "-640.40"

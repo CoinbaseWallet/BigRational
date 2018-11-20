@@ -3,7 +3,6 @@ import XCTest
 
 class BigRationalDivisionTests: XCTestCase {
     func testDivisionSmallNumber() {
-        
         guard
             let x = BigRational("1223456"),
             let y = BigRational("837567")
@@ -24,7 +23,6 @@ class BigRationalDivisionTests: XCTestCase {
     }
 
     func testDivisionLargeNumber() {
-        
         guard
             let x = BigRational(
                 "12248579348653478965347865347865892764780346578034657034234597637856384765783465"
@@ -45,7 +43,6 @@ class BigRationalDivisionTests: XCTestCase {
     }
 
     func testDivisionLargeDecimalNumber() {
-        
         guard
             let x = BigRational(
                 "34978637946739647364379.47896534786534786589"
@@ -68,7 +65,6 @@ class BigRationalDivisionTests: XCTestCase {
     }
 
     func testDivisionLargeNegativeDecimalNumber() {
-        
         guard
             let x = BigRational(
                 "-243587349857934875893475834534.345348753489759834758347"
@@ -93,14 +89,13 @@ class BigRationalDivisionTests: XCTestCase {
         let resultString2 = result2.asDecimalString(precision: 100)
 
         let expected2 = "-3230002585666537306203895063.663980784736382920648963518602566216561936741554114541" +
-        "01895986062264388208336461454808791493248883681"
+            "01895986062264388208336461454808791493248883681"
 
         print("result2 \(result2)")
         XCTAssertEqual(expected2, resultString2)
     }
 
     func testDivisionLargeNegativeDecimalNumbers() {
-        
         guard
             let x = BigRational(
                 "-243587349857934875893475834534.345348753489759834758347"
@@ -123,7 +118,6 @@ class BigRationalDivisionTests: XCTestCase {
     }
 
     func testDivisionSmallNegativeDecimalNumber() {
-        
         guard
             let x = BigRational(
                 "-640.40"
