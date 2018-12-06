@@ -16,6 +16,7 @@
 		E72D53752177DBAF00C301FF /* BigRationalMultiplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72D53742177DBAF00C301FF /* BigRationalMultiplicationTests.swift */; };
 		E7A3775A21A4BF9600F863DA /* BigRationalEqualityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A3775921A4BF9600F863DA /* BigRationalEqualityTests.swift */; };
 		E7AE30142180F26A009A816D /* BigRationalAsDecimalStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AE30132180F26A009A816D /* BigRationalAsDecimalStringTests.swift */; };
+		E7BA19EE21B8D17000B5B032 /* BigRationalInitStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BA19ED21B8D17000B5B032 /* BigRationalInitStringTests.swift */; };
 		E7CA43EB2177EF4B00B4EB54 /* BigRationalAdditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CA43EA2177EF4B00B4EB54 /* BigRationalAdditionTests.swift */; };
 		E7DD7B5D217E9BE4008044DA /* BigRationalInitDoubleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DD7B5C217E9BE4008044DA /* BigRationalInitDoubleTests.swift */; };
 		E7EB5361217850C0006E0C9F /* BigRationalPowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EB5360217850C0006E0C9F /* BigRationalPowerTests.swift */; };
@@ -48,6 +49,7 @@
 		E72D53742177DBAF00C301FF /* BigRationalMultiplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigRationalMultiplicationTests.swift; sourceTree = "<group>"; };
 		E7A3775921A4BF9600F863DA /* BigRationalEqualityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigRationalEqualityTests.swift; sourceTree = "<group>"; };
 		E7AE30132180F26A009A816D /* BigRationalAsDecimalStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigRationalAsDecimalStringTests.swift; sourceTree = "<group>"; };
+		E7BA19ED21B8D17000B5B032 /* BigRationalInitStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigRationalInitStringTests.swift; sourceTree = "<group>"; };
 		E7CA43EA2177EF4B00B4EB54 /* BigRationalAdditionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigRationalAdditionTests.swift; sourceTree = "<group>"; };
 		E7DD7B5C217E9BE4008044DA /* BigRationalInitDoubleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigRationalInitDoubleTests.swift; sourceTree = "<group>"; };
 		E7EB5360217850C0006E0C9F /* BigRationalPowerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigRationalPowerTests.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				E7DD7B5C217E9BE4008044DA /* BigRationalInitDoubleTests.swift */,
 				E7AE30132180F26A009A816D /* BigRationalAsDecimalStringTests.swift */,
 				E7A3775921A4BF9600F863DA /* BigRationalEqualityTests.swift */,
+				E7BA19ED21B8D17000B5B032 /* BigRationalInitStringTests.swift */,
 			);
 			path = BigRationalTests;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				E7CA43EB2177EF4B00B4EB54 /* BigRationalAdditionTests.swift in Sources */,
 				E718A2E72177F03E0097D0AB /* BigRationalDivisionTests.swift in Sources */,
 				E72D53752177DBAF00C301FF /* BigRationalMultiplicationTests.swift in Sources */,
+				E7BA19EE21B8D17000B5B032 /* BigRationalInitStringTests.swift in Sources */,
 				E7EB53632178551F006E0C9F /* BigRationalAsBigIntTests.swift in Sources */,
 				E70E59F92177E7EA00FAD129 /* BigRationalSubtractionTests.swift in Sources */,
 			);
