@@ -250,7 +250,7 @@ public struct BigRational: Codable, Hashable, Comparable {
                 (quotient, remainder) = (remainder * .ten).quotientAndRemainder(dividingBy: denom)
                 result += String(quotient)
                 currentPrecision += 1
-            } while remainder != .zero && currentPrecision <= precision
+            } while remainder != .zero && currentPrecision < precision
         }
 
         return isNegative ? "-\(result)" : result
