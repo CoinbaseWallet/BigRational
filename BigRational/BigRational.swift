@@ -3,7 +3,7 @@ import BigInt
 private let periodDecimalSeparator = "."
 
 // Represents an arbitrary-precision number
-public struct BigRational: Codable, Hashable {
+public struct BigRational: Codable, Hashable, Comparable {
     // Used for Codable
     enum CodingKeys: String, CodingKey {
         case numerator
