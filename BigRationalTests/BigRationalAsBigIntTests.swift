@@ -37,4 +37,25 @@ class BigRationalAsBigIntTests: XCTestCase {
 
         XCTAssertEqual(bigInt, BigInt(98))
     }
+
+    func testAsBigIntwithDecimals() {
+        guard let x = BigRational("12345.12345") else { return XCTFail("missing values") }
+        let bigInt = x.asBigInt(moveByDecimals: 5)
+
+        XCTAssertEqual(bigInt, BigInt(1_234_512_345))
+    }
+
+    func testAsBigIntwithManyDecimals() {
+        guard let x = BigRational("0.123456789012345678") else { return XCTFail("missing values") }
+        let bigInt = x.asBigInt(moveByDecimals: 18)
+
+        XCTAssertEqual(bigInt, BigInt(123_456_789_012_345_678))
+    }
+
+    func testAsBigIntwithNoDecimals() {
+        guard let x = BigRational("12345.12345") else { return XCTFail("missing values") }
+        let bigInt = x.asBigInt(moveByDecimals: 0)
+
+        XCTAssertEqual(bigInt, BigInt(12_345))
+    }
 }
