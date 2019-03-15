@@ -16,7 +16,7 @@ public struct BigRational: Codable, Hashable, Comparable {
     /// Current instance denominator
     public let denominator: BigInt
 
-    // Convert to BigInt
+    /// Convert to BigInt
     public var asBigInt: BigInt {
         let isNegative = numerator.isNegative != denominator.isNegative
         let denom = denominator.absoluteValue
@@ -254,5 +254,15 @@ public struct BigRational: Codable, Hashable, Comparable {
         }
 
         return isNegative ? "-\(result)" : result
+    }
+
+    /// Converts the BigRational to a BigInt by applying the given decimals
+    ///
+    /// - Parameter moveByDecimals: The number of decimals to move
+    ///
+    /// - Returns: The BigInt value
+    public func asBigInt(moveByDecimals decimals: Int) -> BigInt {
+        let atomicValue = self * BigRational(10).power(decimals)
+        return atomicValue.asBigInt
     }
 }
