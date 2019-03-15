@@ -258,11 +258,11 @@ public struct BigRational: Codable, Hashable, Comparable {
 
     /// Converts the BigRational to a BigInt by applying the given decimals
     ///
-    /// - Parameter moveByDecimals: The number of decimals to move
+    /// - Parameter places: The number of decimals places to move
     ///
     /// - Returns: The BigInt value
-    public func asBigInt(moveByDecimals decimals: Int) -> BigInt {
-        let atomicValue = self * BigRational(10).power(decimals)
+    public func asBigInt(shiftDecimalsByPlaces places: Int) -> BigInt {
+        let atomicValue = self * BigRational(10).power(places)
         return atomicValue.asBigInt
     }
 }
