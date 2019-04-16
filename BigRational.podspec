@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
   s.swift_version = '4.2'
   s.source_files = 'BigRational/**/*'
 
-  s.dependency 'BigInt',  '~> 3.1.0'
+  s.dependency 'BigInt',  '>= 4.0.0'
 end
