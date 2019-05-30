@@ -150,4 +150,13 @@ class BigRationalMultiplicationTests: XCTestCase {
         print("result \(result2)")
         XCTAssertEqual(expected2, result2String)
     }
+
+    func testShorthandMutliplication() {
+        var x = BigRational(3)
+        let y = BigRational(5)
+
+        x *= y
+
+        XCTAssertEqual(x, BigRational(15))
+    }
 }

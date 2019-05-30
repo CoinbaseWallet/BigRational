@@ -162,6 +162,15 @@ public struct BigRational: Codable, Hashable, Comparable {
         return BigRational(numerator: numerator, denominator: denominator)
     }
 
+    /// Assign the product of the two values to lhs
+    ///
+    /// - Parameters:
+    ///   - lhs: Left hand side value
+    ///   - rhs: Right hand side value
+    public static func *= (lhs: inout BigRational, rhs: BigRational) {
+        lhs = lhs * rhs
+    }
+
     // Addition using the following formula: a/b + c/d  == (ad + bc)/bd
     ///
     /// - Parameters:
@@ -174,6 +183,15 @@ public struct BigRational: Codable, Hashable, Comparable {
         let denominator = lhs.denominator * rhs.denominator
 
         return BigRational(numerator: numerator, denominator: denominator)
+    }
+
+    /// Assign the sum of the two values to lhs
+    ///
+    /// - Parameters:
+    ///   - lhs: Left hand side value
+    ///   - rhs: Right hand side value
+    public static func += (lhs: inout BigRational, rhs: BigRational) {
+        lhs = lhs + rhs
     }
 
     // Subtraction using the following formula: a/b - c/d  == (ad - bc)/bd
@@ -190,6 +208,15 @@ public struct BigRational: Codable, Hashable, Comparable {
         return BigRational(numerator: numerator, denominator: denominator)
     }
 
+    /// Assign the difference of the two values to lhs
+    ///
+    /// - Parameters:
+    ///   - lhs: Left hand side value
+    ///   - rhs: Right hand side value
+    public static func -= (lhs: inout BigRational, rhs: BigRational) {
+        lhs = lhs - rhs
+    }
+
     // Division using the following formula: a/b / c/d  == (ad)/(bc)
     ///
     /// - Parameters:
@@ -202,6 +229,15 @@ public struct BigRational: Codable, Hashable, Comparable {
         let denominator = lhs.denominator * rhs.numerator
 
         return BigRational(numerator: numerator, denominator: denominator)
+    }
+
+    /// Assign the quotient of the two values to lhs
+    ///
+    /// - Parameters:
+    ///   - lhs: Left hand side value
+    ///   - rhs: Right hand side value
+    public static func /= (lhs: inout BigRational, rhs: BigRational) {
+        lhs = lhs / rhs
     }
 
     // Mod using the following formula: a/b % c/d  == (ad % bc)/bd
