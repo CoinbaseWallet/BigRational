@@ -157,4 +157,13 @@ class BigRationalDivisionTests: XCTestCase {
         print("result \(result2)")
         XCTAssertEqual(expected2, result2String)
     }
+
+    func testDivisionShorthand() {
+        var x = BigRational(10)
+        let y = BigRational(5)
+
+        x /= y
+
+        XCTAssertEqual(x, BigRational(2))
+    }
 }

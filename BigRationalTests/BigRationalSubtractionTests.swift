@@ -136,4 +136,13 @@ class BigRationalSubtractionTests: XCTestCase {
         print("result \(result2)")
         XCTAssertEqual(expected2, result2String)
     }
+
+    func testSubtractionShorthand() {
+        var x = BigRational(10)
+        let y = BigRational(3)
+
+        x -= y
+
+        XCTAssertEqual(x, BigRational(7))
+    }
 }

@@ -146,4 +146,13 @@ class BigRationalAdditionTests: XCTestCase {
         print("result \(result2)")
         XCTAssertEqual(expected2, result2String)
     }
+
+    func testAdditionShorthand() {
+        var x = BigRational(3)
+        let y = BigRational(2)
+
+        x += y
+
+        XCTAssertEqual(x, BigRational(5))
+    }
 }
