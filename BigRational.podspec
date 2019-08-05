@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '11.0'
   s.swift_version = '4.2'
-  s.source_files = 'BigRational/**/*'
+  s.source_files = 'BigRational/**/*.swift'
 
   s.dependency 'BigInt',  '~> 3.1.0'
 end
