@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -104,7 +104,7 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		E72D536A2177DB8900C301FF /* BigRationalTests */ = {
+		E72D536A2177DB8900C301FF /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				E72D536D2177DB8900C301FF /* Info.plist */,
@@ -120,14 +120,14 @@
 				E7A3775921A4BF9600F863DA /* BigRationalEqualityTests.swift */,
 				E7BA19ED21B8D17000B5B032 /* BigRationalInitStringTests.swift */,
 			);
-			path = BigRationalTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		E7EB8DA02177A3EB00DC3EFA = {
 			isa = PBXGroup;
 			children = (
-				E7EB8DAC2177A3EB00DC3EFA /* BigRational */,
-				E72D536A2177DB8900C301FF /* BigRationalTests */,
+				E7EB8DAC2177A3EB00DC3EFA /* Sources */,
+				E72D536A2177DB8900C301FF /* Tests */,
 				1BA29205637848875D378460 /* Frameworks */,
 				AF1ABFF0442AA48B110B836D /* Pods */,
 				E7EB8DAB2177A3EB00DC3EFA /* Products */,
@@ -143,14 +143,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E7EB8DAC2177A3EB00DC3EFA /* BigRational */ = {
+		E7EB8DAC2177A3EB00DC3EFA /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				E7F59044217801AF008E6751 /* Module */,
 				E7EB8DD12177D00500DC3EFA /* Extensions */,
 				E7EB8DCD2177CFFF00DC3EFA /* BigRational.swift */,
 			);
-			path = BigRational;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		E7EB8DD12177D00500DC3EFA /* Extensions */ = {
@@ -387,7 +387,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BigRationalTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -407,7 +407,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BigRationalTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -554,7 +554,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/BigRational/Module/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Module/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -583,7 +583,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/BigRational/Module/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Module/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

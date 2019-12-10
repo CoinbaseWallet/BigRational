@@ -1,4 +1,5 @@
 import BigInt
+import Foundation
 
 private let periodDecimalSeparator = "."
 
