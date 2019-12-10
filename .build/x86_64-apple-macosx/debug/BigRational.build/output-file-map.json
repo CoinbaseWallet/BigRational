@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/Users/hichambouabdallah/Source/BigRational/.build/x86_64-apple-macosx/debug/BigRational.build/master.swiftdeps"
+  },
+  "/Users/hichambouabdallah/Source/BigRational/Sources/BigRational.swift": {
+    "dependencies": "/Users/hichambouabdallah/Source/BigRational/.build/x86_64-apple-macosx/debug/BigRational.build/BigRational.d",
+    "object": "/Users/hichambouabdallah/Source/BigRational/.build/x86_64-apple-macosx/debug/BigRational.build/BigRational.swift.o",
+    "swiftmodule": "/Users/hichambouabdallah/Source/BigRational/.build/x86_64-apple-macosx/debug/BigRational.build/BigRational~partial.swiftmodule",
+    "swift-dependencies": "/Users/hichambouabdallah/Source/BigRational/.build/x86_64-apple-macosx/debug/BigRational.build/BigRational.swiftdeps"
+  },
+  "/Users/hichambouabdallah/Source/BigRational/Sources/Extensions/BigInt+BigRational.swift": {
+    "dependencies": "/Users/hichambouabdallah/Source/BigRational/.build/x86_64-apple-macosx/debug/BigRational.build/Extensions/BigInt+BigRational.d",
+    "object": "/Users/hichambouabdallah/Source/BigRational/.build/x86_64-apple-macosx/debug/BigRational.build/Extensions/BigInt+BigRational.swift.o",
+    "swiftmodule": "/Users/hichambouabdallah/Source/BigRational/.build/x86_64-apple-macosx/debug/BigRational.build/Extensions/BigInt+BigRational~partial.swiftmodule",
+    "swift-dependencies": "/Users/hichambouabdallah/Source/BigRational/.build/x86_64-apple-macosx/debug/BigRational.build/Extensions/BigInt+BigRational.swiftdeps"
+  }
+}

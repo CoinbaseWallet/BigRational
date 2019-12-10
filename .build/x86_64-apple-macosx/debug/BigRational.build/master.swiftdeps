@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+options: "1fc82d220936c421de9a3fd3374534e5"
+build_time: [1575941915, 527883000]
+inputs:
+  "/Users/hichambouabdallah/Source/BigRational/Sources/BigRational.swift": [1575938811, 584677735]
+  "/Users/hichambouabdallah/Source/BigRational/Sources/Extensions/BigInt+BigRational.swift": [1570138488, 339758874]

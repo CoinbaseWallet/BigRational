@@ -1,0 +1,29 @@
+{
+  "": {
+    "swift-dependencies": "/Users/hichambouabdallah/Source/BigRational/.build/x86_64-apple-macosx/debug/SipHash.build/master.swiftdeps"
+  },
+  "/Users/hichambouabdallah/Source/BigRational/.build/checkouts/SipHash/SipHash/Primitive Types.swift": {
+    "dependencies": "/Users/hichambouabdallah/Source/BigRational/.build/x86_64-apple-macosx/debug/SipHash.build/Primitive Types.d",
+    "object": "/Users/hichambouabdallah/Source/BigRational/.build/x86_64-apple-macosx/debug/SipHash.build/Primitive Types.swift.o",
+    "swiftmodule": "/Users/hichambouabdallah/Source/BigRational/.build/x86_64-apple-macosx/debug/SipHash.build/Primitive Types~partial.swiftmodule",
+    "swift-dependencies": "/Users/hichambouabdallah/Source/BigRational/.build/x86_64-apple-macosx/debug/SipHash.build/Primitive Types.swiftdeps"
+  },
+  "/Users/hichambouabdallah/Source/BigRational/.build/checkouts/SipHash/SipHash/RandomUInt64.swift": {
+    "dependencies": "/Users/hichambouabdallah/Source/BigRational/.build/x86_64-apple-macosx/debug/SipHash.build/RandomUInt64.d",
+    "object": "/Users/hichambouabdallah/Source/BigRational/.build/x86_64-apple-macosx/debug/SipHash.build/RandomUInt64.swift.o",
+    "swiftmodule": "/Users/hichambouabdallah/Source/BigRational/.build/x86_64-apple-macosx/debug/SipHash.build/RandomUInt64~partial.swiftmodule",
+    "swift-dependencies": "/Users/hichambouabdallah/Source/BigRational/.build/x86_64-apple-macosx/debug/SipHash.build/RandomUInt64.swiftdeps"
+  },
+  "/Users/hichambouabdallah/Source/BigRational/.build/checkouts/SipHash/SipHash/SipHashable.swift": {
+    "dependencies": "/Users/hichambouabdallah/Source/BigRational/.build/x86_64-apple-macosx/debug/SipHash.build/SipHashable.d",
+    "object": "/Users/hichambouabdallah/Source/BigRational/.build/x86_64-apple-macosx/debug/SipHash.build/SipHashable.swift.o",
+    "swiftmodule": "/Users/hichambouabdallah/Source/BigRational/.build/x86_64-apple-macosx/debug/SipHash.build/SipHashable~partial.swiftmodule",
+    "swift-dependencies": "/Users/hichambouabdallah/Source/BigRational/.build/x86_64-apple-macosx/debug/SipHash.build/SipHashable.swiftdeps"
+  },
+  "/Users/hichambouabdallah/Source/BigRational/.build/checkouts/SipHash/SipHash/SipHasher.swift": {
+    "dependencies": "/Users/hichambouabdallah/Source/BigRational/.build/x86_64-apple-macosx/debug/SipHash.build/SipHasher.d",
+    "object": "/Users/hichambouabdallah/Source/BigRational/.build/x86_64-apple-macosx/debug/SipHash.build/SipHasher.swift.o",
+    "swiftmodule": "/Users/hichambouabdallah/Source/BigRational/.build/x86_64-apple-macosx/debug/SipHash.build/SipHasher~partial.swiftmodule",
+    "swift-dependencies": "/Users/hichambouabdallah/Source/BigRational/.build/x86_64-apple-macosx/debug/SipHash.build/SipHasher.swiftdeps"
+  }
+}

@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+options: "52a274baef307088021e4686f41d1f8e"
+build_time: [1575941905, 678224000]
+inputs:
+  "/Users/hichambouabdallah/Source/BigRational/.build/checkouts/SipHash/SipHash/Primitive Types.swift": [1575936040, 723776521]
+  "/Users/hichambouabdallah/Source/BigRational/.build/checkouts/SipHash/SipHash/RandomUInt64.swift": [1575936040, 723854391]
+  "/Users/hichambouabdallah/Source/BigRational/.build/checkouts/SipHash/SipHash/SipHashable.swift": [1575936040, 723993701]
+  "/Users/hichambouabdallah/Source/BigRational/.build/checkouts/SipHash/SipHash/SipHasher.swift": [1575936040, 724090450]
