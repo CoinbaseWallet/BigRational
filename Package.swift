@@ -5,7 +5,6 @@ import PackageDescription
 
 let package = Package(
     name: "BigRational",
-    platforms: [.iOS(.v10)],
     products: [
         .library(name: "BigRational", targets: ["BigRational"]),
     ],
